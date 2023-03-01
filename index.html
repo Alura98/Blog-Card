@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVO Academy JS Starter with Vite</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <a href="#">
+        <div class="card">
+          <picture>
+            <source srcset="./assets/image.jpg" media="(min-width: 375px)" />
+            <img class="image" src="./assets/smaller-image.jpg" alt="image" />
+          </picture>
+          <div class="person-list">
+            <div class="person">
+              <img class="avatar" src="./assets/avatar.jpg" alt="avatar" />
+              <p class="person-name">Kylee Thomson</p>
+            </div>
+            <div class="time">
+              <p class="time-text">1h ago.</p>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="title">Valentine's gifts</div>
+            <div class="info">
+              Discover the best Valentine's Day gifts for Women and Men, see how
+              a small gift can make the other person happy for little money.
+            </div>
+          </div>
+          <div class="read-more">
+            <p class="read-more-text">Read more</p>
+            <img class="vector" src="./assets/Vector.svg" alt="vector" />
+          </div>
+        </div>
+      </a>
+    </main>
+    <script type="module" src="/src/global-scripts/main.js"></script>
+    <script
+      type="module"
+      src="/src/pages/home-page/scripts/home-page.js"
+    ></script>
+  </body>
+</html>

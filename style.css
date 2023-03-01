@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --fw-medium: 500;
+  --fw-regular: 400;
+
+  --clr-background: #ededed;
+  --clr-white: #ffffff;
+  --clr-lightgrey: #d5d5d5;
+  --clr-grey: #7c7c7c;
+  --clr-black: #000000;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--clr-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  background-color: var(--clr-white);
+  max-width: 608px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 16px 16px 22px;
+}
+
+.image {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.image:hover {
+  transform: scale(1.02);
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+.person-list {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.person-name {
+  font-size: 14px;
+  font-weight: var(--fw-medium);
+}
+
+.time-text {
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  color: var(--clr-grey);
+}
+
+.card-content {
+  padding-block: 32px;
+}
+
+.title {
+  padding-bottom: 14px;
+  color: var(--clr-black);
+  font-size: 24px;
+  font-weight: var(--fw-medium);
+}
+
+.info {
+  color: var(--clr-grey);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  line-height: 20.8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.read-more {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.read-more-text {
+  font-size: 16px;
+  font-weight: var(--fw-medium);
+  line-height: 20.8px;
+  color: var(--clr-black);
+}
+
+.read-more-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
